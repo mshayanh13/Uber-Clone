@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		10C2B17F1E7C8CB2000CF39F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B17E1E7C8CB2000CF39F /* AppDelegate.swift */; };
-		10C2B1811E7C8CB2000CF39F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1801E7C8CB2000CF39F /* ViewController.swift */; };
+		10C2B1811E7C8CB2000CF39F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1801E7C8CB2000CF39F /* LoginVC.swift */; };
 		10C2B1841E7C8CB2000CF39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C2B1821E7C8CB2000CF39F /* Main.storyboard */; };
 		10C2B1861E7C8CB2000CF39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C2B1851E7C8CB2000CF39F /* Assets.xcassets */; };
 		10C2B1891E7C8CB2000CF39F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C2B1871E7C8CB2000CF39F /* LaunchScreen.storyboard */; };
 		10C2B1911E7C8EF6000CF39F /* password in Resources */ = {isa = PBXBuildFile; fileRef = 10C2B1901E7C8EF6000CF39F /* password */; };
+		10C2B1951E7C9959000CF39F /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1921E7C9959000CF39F /* MaterialButton.swift */; };
+		10C2B1961E7C9959000CF39F /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1931E7C9959000CF39F /* MaterialTextField.swift */; };
+		10C2B1971E7C9959000CF39F /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1941E7C9959000CF39F /* MaterialView.swift */; };
+		10C2B1991E7C99BB000CF39F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1981E7C99BB000CF39F /* Constants.swift */; };
 		95D4754F67DC294351D9B196 /* Pods_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB770360BCFCD0FD78D594C0 /* Pods_Uber_Clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +24,16 @@
 		0ADAC73615171F9AE69F10C7 /* Pods-Uber Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone.release.xcconfig"; sourceTree = "<group>"; };
 		10C2B17B1E7C8CB2000CF39F /* Uber Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2B17E1E7C8CB2000CF39F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10C2B1801E7C8CB2000CF39F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10C2B1801E7C8CB2000CF39F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		10C2B1831E7C8CB2000CF39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10C2B1851E7C8CB2000CF39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C2B1881E7C8CB2000CF39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10C2B18A1E7C8CB2000CF39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C2B1901E7C8EF6000CF39F /* password */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = password; sourceTree = "<group>"; };
+		10C2B1921E7C9959000CF39F /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		10C2B1931E7C9959000CF39F /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		10C2B1941E7C9959000CF39F /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		10C2B1981E7C99BB000CF39F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3145DF16EDB0FC7ADB1CC7A5 /* Pods-Uber Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		EB770360BCFCD0FD78D594C0 /* Pods_Uber_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,13 +71,17 @@
 		10C2B17D1E7C8CB2000CF39F /* Uber Clone */ = {
 			isa = PBXGroup;
 			children = (
+				10C2B1921E7C9959000CF39F /* MaterialButton.swift */,
+				10C2B1931E7C9959000CF39F /* MaterialTextField.swift */,
+				10C2B1941E7C9959000CF39F /* MaterialView.swift */,
 				10C2B17E1E7C8CB2000CF39F /* AppDelegate.swift */,
-				10C2B1801E7C8CB2000CF39F /* ViewController.swift */,
+				10C2B1801E7C8CB2000CF39F /* LoginVC.swift */,
 				10C2B1821E7C8CB2000CF39F /* Main.storyboard */,
 				10C2B1851E7C8CB2000CF39F /* Assets.xcassets */,
 				10C2B1871E7C8CB2000CF39F /* LaunchScreen.storyboard */,
 				10C2B18A1E7C8CB2000CF39F /* Info.plist */,
 				10C2B1901E7C8EF6000CF39F /* password */,
+				10C2B1981E7C99BB000CF39F /* Constants.swift */,
 			);
 			path = "Uber Clone";
 			sourceTree = "<group>";
@@ -215,8 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C2B1811E7C8CB2000CF39F /* ViewController.swift in Sources */,
+				10C2B1811E7C8CB2000CF39F /* LoginVC.swift in Sources */,
 				10C2B17F1E7C8CB2000CF39F /* AppDelegate.swift in Sources */,
+				10C2B1971E7C9959000CF39F /* MaterialView.swift in Sources */,
+				10C2B1961E7C9959000CF39F /* MaterialTextField.swift in Sources */,
+				10C2B1951E7C9959000CF39F /* MaterialButton.swift in Sources */,
+				10C2B1991E7C99BB000CF39F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

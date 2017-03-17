@@ -27,11 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(with: parseConfiguration)
         
-        PFUser.enableAutomaticUser()
+        //PFUser.enableAutomaticUser()
         
         let defaultACL = PFACL();
         
         defaultACL.getPublicReadAccess = true
+        defaultACL.getPublicWriteAccess = true
         
         PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
         

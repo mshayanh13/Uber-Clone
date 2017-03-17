@@ -1,26 +1,180 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VL-lk-Pbv" customClass="MaterialView" customModule="Uber_Clone" customModuleProvider="target">
+                                <rect key="frame" x="16" y="50" width="288" height="468"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXm-CR-3IH">
+                                        <rect key="frame" x="109.5" y="58" width="70.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SHm-B5-Mqw">
+                                        <rect key="frame" x="8" y="138" width="272" height="316"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="YNE-JS-APp">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="85"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rob" borderStyle="roundedRect" placeholder="Enter your username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frU-bT-93B" customClass="MaterialTextField" customModule="Uber_Clone" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="hec-xB-BR1"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-Fp-sNK" customClass="MaterialTextField" customModule="Uber_Clone" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="55" width="272" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="YII-4I-OMn"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PdC-9x-654">
+                                                <rect key="frame" x="0.0" y="135" width="272" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rider" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-9y-uEw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="31"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PRZ-sq-1o3">
+                                                        <rect key="frame" x="112" y="0.0" width="51" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="WJF-UP-CpH"/>
+                                                            <constraint firstAttribute="width" constant="49" id="cUn-eW-8zi"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="riderDriverValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pu7-Jy-8DW"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znz-Xy-LAj">
+                                                        <rect key="frame" x="171" y="0.0" width="101" height="31"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="PRZ-sq-1o3" firstAttribute="centerX" secondItem="PdC-9x-654" secondAttribute="centerX" id="QdL-nv-kXo"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B4p-Eg-9sY">
+                                                <rect key="frame" x="0.0" y="216" width="272" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-j3-h2l" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
+                                                        <rect key="frame" x="48.5" y="0.0" width="175" height="30"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Log In">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="loginSignupTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xb-5d-KS6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-73-4Bb">
+                                                        <rect key="frame" x="126.5" y="40" width="19" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-Fl-uJB" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
+                                                        <rect key="frame" x="48.5" y="70" width="175" height="30"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="175" id="XJy-0H-R7u"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Switch To Sign Up">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="changeLoginSignupModeTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaU-iz-sXh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="v7P-j3-h2l" firstAttribute="width" secondItem="kab-Fl-uJB" secondAttribute="width" id="kAP-ad-A2J"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="SHm-B5-Mqw" secondAttribute="trailing" id="G8F-dA-7vG"/>
+                                    <constraint firstItem="DXm-CR-3IH" firstAttribute="centerX" secondItem="2VL-lk-Pbv" secondAttribute="centerX" id="W1z-WL-anh"/>
+                                    <constraint firstItem="SHm-B5-Mqw" firstAttribute="leading" secondItem="2VL-lk-Pbv" secondAttribute="leadingMargin" id="XA0-RQ-eeb"/>
+                                    <constraint firstItem="SHm-B5-Mqw" firstAttribute="top" secondItem="DXm-CR-3IH" secondAttribute="bottom" constant="50" id="cGq-C5-uSu"/>
+                                    <constraint firstItem="DXm-CR-3IH" firstAttribute="top" secondItem="2VL-lk-Pbv" secondAttribute="topMargin" constant="50" id="sea-s5-wFx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2VL-lk-Pbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6J8-OM-y5U"/>
+                            <constraint firstItem="2VL-lk-Pbv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="Cn7-gh-ZKR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2VL-lk-Pbv" secondAttribute="trailing" id="FSf-X1-Ifd"/>
+                            <constraint firstItem="2VL-lk-Pbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oqe-Hj-fJm"/>
+                            <constraint firstItem="2VL-lk-Pbv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="utj-0q-9kE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeLoginSignupModeButton" destination="kab-Fl-uJB" id="97q-Lz-xfL"/>
+                        <outlet property="loginOrSignupButton" destination="v7P-j3-h2l" id="8Ma-07-YE8"/>
+                        <outlet property="passwordTextField" destination="gmP-Fp-sNK" id="UgF-02-0JK"/>
+                        <outlet property="riderDriverSwitch" destination="PRZ-sq-1o3" id="3Bf-kc-dLM"/>
+                        <outlet property="usernameTextField" destination="frU-bT-93B" id="MJv-M5-BYd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SKL-we-cdE">
+            <objects>
+                <viewController id="3Ls-Hc-PIH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vzf-jB-HRD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uco-xb-gCp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uaY-2L-gAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjp-fW-xza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="135"/>
         </scene>
     </scenes>
 </document>

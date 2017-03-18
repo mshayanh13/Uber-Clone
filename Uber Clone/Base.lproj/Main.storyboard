@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -148,20 +149,23 @@
                     </view>
                     <connections>
                         <outlet property="changeLoginSignupModeButton" destination="kab-Fl-uJB" id="97q-Lz-xfL"/>
+                        <outlet property="driverLabel" destination="Znz-Xy-LAj" id="RTn-r6-Mcz"/>
                         <outlet property="loginOrSignupButton" destination="v7P-j3-h2l" id="8Ma-07-YE8"/>
                         <outlet property="passwordTextField" destination="gmP-Fp-sNK" id="UgF-02-0JK"/>
                         <outlet property="riderDriverSwitch" destination="PRZ-sq-1o3" id="3Bf-kc-dLM"/>
+                        <outlet property="riderLabel" destination="0kU-9y-uEw" id="P4O-G0-Jfk"/>
                         <outlet property="usernameTextField" destination="frU-bT-93B" id="MJv-M5-BYd"/>
+                        <segue destination="3Ls-Hc-PIH" kind="show" identifier="RiderVC" id="g5F-eB-XJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--RiderVC-->
         <scene sceneID="SKL-we-cdE">
             <objects>
-                <viewController id="3Ls-Hc-PIH" sceneMemberID="viewController">
+                <viewController id="3Ls-Hc-PIH" customClass="RiderVC" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vzf-jB-HRD"/>
                         <viewControllerLayoutGuide type="bottom" id="Uco-xb-gCp"/>
@@ -169,12 +173,71 @@
                     <view key="view" contentMode="scaleToFill" id="uaY-2L-gAm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViR-fU-4Ma">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Uber" id="oMd-rz-wm5">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ZN2-cs-rDp">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="LogoutSegue" id="sod-0d-Yej"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mft-Qr-shc">
+                                <rect key="frame" x="16" y="92" width="288" height="456"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRq-aq-vZE" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="386" width="120" height="32"/>
+                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="qdb-ya-eM0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Call An Uber">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uberButtonTappedWithSender:" destination="3Ls-Hc-PIH" eventType="touchUpInside" id="HTs-As-xY0"/>
+                                        </connections>
+                                    </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-2Z-SFX">
+                                        <rect key="frame" x="16" y="8" width="256" height="328"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="IXU-2Z-SFX" firstAttribute="bottom" secondItem="mft-Qr-shc" secondAttribute="bottomMargin" multiplier="0.75" id="AIt-wM-MFJ"/>
+                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="centerX" secondItem="IXU-2Z-SFX" secondAttribute="centerX" id="JNf-PA-gbR"/>
+                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="top" secondItem="IXU-2Z-SFX" secondAttribute="bottom" constant="50" id="QZa-QM-Yjq"/>
+                                    <constraint firstItem="IXU-2Z-SFX" firstAttribute="leading" secondItem="mft-Qr-shc" secondAttribute="leadingMargin" constant="8" id="aQ0-ft-li7"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="IXU-2Z-SFX" secondAttribute="trailing" constant="8" id="mLb-gw-tea"/>
+                                    <constraint firstItem="IXU-2Z-SFX" firstAttribute="top" secondItem="mft-Qr-shc" secondAttribute="topMargin" id="vS0-qp-f1V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mft-Qr-shc" firstAttribute="trailing" secondItem="uaY-2L-gAm" secondAttribute="trailingMargin" id="04L-cO-Ywh"/>
+                            <constraint firstItem="ViR-fU-4Ma" firstAttribute="leading" secondItem="uaY-2L-gAm" secondAttribute="leading" id="8k5-3P-e8Z"/>
+                            <constraint firstItem="mft-Qr-shc" firstAttribute="leading" secondItem="uaY-2L-gAm" secondAttribute="leadingMargin" id="RcU-wi-WJh"/>
+                            <constraint firstItem="ViR-fU-4Ma" firstAttribute="top" secondItem="vzf-jB-HRD" secondAttribute="bottom" constant="8" id="hMf-k2-hHw"/>
+                            <constraint firstItem="mft-Qr-shc" firstAttribute="top" secondItem="ViR-fU-4Ma" secondAttribute="bottom" constant="20" id="l0i-cQ-mYc"/>
+                            <constraint firstAttribute="trailing" secondItem="ViR-fU-4Ma" secondAttribute="trailing" id="mEW-6m-Nyu"/>
+                            <constraint firstItem="Uco-xb-gCp" firstAttribute="top" secondItem="mft-Qr-shc" secondAttribute="bottom" constant="20" id="tln-zU-i8P"/>
+                            <constraint firstItem="mft-Qr-shc" firstAttribute="centerX" secondItem="uaY-2L-gAm" secondAttribute="centerX" id="wDG-NJ-Egp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="IXU-2Z-SFX" id="Scy-0x-zOA"/>
+                        <outlet property="uberButton" destination="DRq-aq-vZE" id="3U7-ut-kjv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjp-fW-xza" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="135"/>
+            <point key="canvasLocation" x="909.375" y="135.21126760563379"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var riderDriverSwitch: UISwitch!
     @IBOutlet weak var loginOrSignupButton: MaterialButton!
     @IBOutlet weak var changeLoginSignupModeButton: MaterialButton!
+    @IBOutlet weak var driverLabel: UILabel!
+    @IBOutlet weak var riderLabel: UILabel!
     
     var logInMode = true
     var userMode = UserMode.Rider
@@ -29,6 +31,25 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if let isDriver = PFUser.current()?["isDriver"] as? String {
+            
+            if isDriver == "Driver" {
+                
+                
+                
+            } else {
+                
+                performSegue(withIdentifier: "RiderVC", sender: self)
+                
+            }
+            
+        }
+
         
     }
     
@@ -85,6 +106,20 @@ class LoginVC: UIViewController {
                         
                         print("Sign Up Successful")
                         
+                        if let isDriver = PFUser.current()?["isDriver"] as? String {
+                            
+                            if isDriver == "Driver" {
+                                
+                                
+                                
+                            } else {
+                                
+                                self.performSegue(withIdentifier: "RiderVC", sender: self)
+                                
+                            }
+                            
+                        }
+                        
                     }
                     
                 })
@@ -111,6 +146,10 @@ class LoginVC: UIViewController {
             
             changeLoginSignupModeButton.setTitle("Switch To Log In", for: .normal)
             
+            riderDriverSwitch.isHidden = false
+            riderLabel.isHidden = false
+            driverLabel.isHidden = false
+            
         } else {
             
             logInMode = true
@@ -118,6 +157,10 @@ class LoginVC: UIViewController {
             loginOrSignupButton.setTitle("Log In", for: .normal)
             
             changeLoginSignupModeButton.setTitle("Switch To Sign Up", for: .normal)
+            
+            riderDriverSwitch.isHidden = true
+            riderLabel.isHidden = true
+            driverLabel.isHidden = true
             
         }
         

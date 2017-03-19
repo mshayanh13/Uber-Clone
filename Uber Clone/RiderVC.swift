@@ -17,7 +17,7 @@ class RiderVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
     var userLocation: CLLocationCoordinate2D!
-    var riderRequestActive = true
+    var riderRequestActive = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class RiderVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         
         query.findObjectsInBackground(block: { (objects, error) in
             
-            if objects != nil {
+            if let objects = objects , objects.count > 0 {
                     
                 self.riderRequestActive = true
                 self.uberButton.setTitle("Cancel Uber", for: .normal)
@@ -51,7 +51,9 @@ class RiderVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "LogoutSegue" {
+        if segue.identifier == "RiderLogoutSegue" {
+            
+            locationManager.stopUpdatingLocation()
             
             PFUser.logOut()
             

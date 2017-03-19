@@ -18,7 +18,8 @@
 		10C2B1971E7C9959000CF39F /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1941E7C9959000CF39F /* MaterialView.swift */; };
 		10C2B1991E7C99BB000CF39F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1981E7C99BB000CF39F /* Constants.swift */; };
 		10C2B19B1E7CCA4B000CF39F /* RiderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B19A1E7CCA4B000CF39F /* RiderVC.swift */; };
-		10C2B19D1E7CCA61000CF39F /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B19C1E7CCA61000CF39F /* DriverVC.swift */; };
+		10C2B1A11E7F1887000CF39F /* DriverTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1A01E7F1887000CF39F /* DriverTVC.swift */; };
+		10C2B1A31E7F3442000CF39F /* RiderLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2B1A21E7F3442000CF39F /* RiderLocationVC.swift */; };
 		95D4754F67DC294351D9B196 /* Pods_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB770360BCFCD0FD78D594C0 /* Pods_Uber_Clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +38,8 @@
 		10C2B1941E7C9959000CF39F /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		10C2B1981E7C99BB000CF39F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		10C2B19A1E7CCA4B000CF39F /* RiderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderVC.swift; sourceTree = "<group>"; };
-		10C2B19C1E7CCA61000CF39F /* DriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		10C2B1A01E7F1887000CF39F /* DriverTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverTVC.swift; sourceTree = "<group>"; };
+		10C2B1A21E7F3442000CF39F /* RiderLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderLocationVC.swift; sourceTree = "<group>"; };
 		3145DF16EDB0FC7ADB1CC7A5 /* Pods-Uber Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		EB770360BCFCD0FD78D594C0 /* Pods_Uber_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,7 +89,8 @@
 				10C2B1901E7C8EF6000CF39F /* password */,
 				10C2B1981E7C99BB000CF39F /* Constants.swift */,
 				10C2B19A1E7CCA4B000CF39F /* RiderVC.swift */,
-				10C2B19C1E7CCA61000CF39F /* DriverVC.swift */,
+				10C2B1A01E7F1887000CF39F /* DriverTVC.swift */,
+				10C2B1A21E7F3442000CF39F /* RiderLocationVC.swift */,
 			);
 			path = "Uber Clone";
 			sourceTree = "<group>";
@@ -236,11 +239,12 @@
 				10C2B1811E7C8CB2000CF39F /* LoginVC.swift in Sources */,
 				10C2B17F1E7C8CB2000CF39F /* AppDelegate.swift in Sources */,
 				10C2B1971E7C9959000CF39F /* MaterialView.swift in Sources */,
+				10C2B1A11E7F1887000CF39F /* DriverTVC.swift in Sources */,
 				10C2B1961E7C9959000CF39F /* MaterialTextField.swift in Sources */,
 				10C2B1951E7C9959000CF39F /* MaterialButton.swift in Sources */,
 				10C2B19B1E7CCA4B000CF39F /* RiderVC.swift in Sources */,
-				10C2B19D1E7CCA61000CF39F /* DriverVC.swift in Sources */,
 				10C2B1991E7C99BB000CF39F /* Constants.swift in Sources */,
+				10C2B1A31E7F3442000CF39F /* RiderLocationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

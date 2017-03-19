@@ -40,7 +40,7 @@ class LoginVC: UIViewController {
             
             if isDriver == "Driver" {
                 
-                
+                performSegue(withIdentifier: "DriverTVC", sender: self)
                 
             } else {
                 
@@ -76,6 +76,8 @@ class LoginVC: UIViewController {
                         
                         print("Log In Successful")
                         
+                        self.signIn()
+                        
                     }
                     
                 })
@@ -106,19 +108,7 @@ class LoginVC: UIViewController {
                         
                         print("Sign Up Successful")
                         
-                        if let isDriver = PFUser.current()?["isDriver"] as? String {
-                            
-                            if isDriver == "Driver" {
-                                
-                                
-                                
-                            } else {
-                                
-                                self.performSegue(withIdentifier: "RiderVC", sender: self)
-                                
-                            }
-                            
-                        }
+                        self.signIn()
                         
                     }
                     
@@ -175,6 +165,24 @@ class LoginVC: UIViewController {
         } else {
             
             userMode = UserMode.Rider
+            
+        }
+        
+    }
+    
+    func signIn() {
+        
+        if let isDriver = PFUser.current()?["isDriver"] as? String {
+            
+            if isDriver == "Driver" {
+                
+                self.performSegue(withIdentifier: "DriverTVC", sender: self)
+                
+            } else {
+                
+                self.performSegue(withIdentifier: "RiderVC", sender: self)
+                
+            }
             
         }
         

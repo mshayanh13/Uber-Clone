@@ -32,8 +32,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SHm-B5-Mqw">
-                                        <rect key="frame" x="8" y="138" width="272" height="316"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SHm-B5-Mqw">
+                                        <rect key="frame" x="8" y="138" width="272" height="285"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="YNE-JS-APp">
                                                 <rect key="frame" x="0.0" y="0.0" width="272" height="85"/>
@@ -58,17 +58,17 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PdC-9x-654">
-                                                <rect key="frame" x="0.0" y="135" width="272" height="31"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PdC-9x-654">
+                                                <rect key="frame" x="0.0" y="135" width="272" height="0.0"/>
                                                 <subviews>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rider" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-9y-uEw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="31"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rider" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-9y-uEw">
+                                                        <rect key="frame" x="136.5" y="-323" width="0.0" height="31"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PRZ-sq-1o3">
-                                                        <rect key="frame" x="112" y="0.0" width="51" height="31"/>
+                                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PRZ-sq-1o3">
+                                                        <rect key="frame" x="136.5" y="-323" width="2" height="31"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="31" id="WJF-UP-CpH"/>
                                                             <constraint firstAttribute="width" constant="49" id="cUn-eW-8zi"/>
@@ -77,8 +77,8 @@
                                                             <action selector="riderDriverValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pu7-Jy-8DW"/>
                                                         </connections>
                                                     </switch>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znz-Xy-LAj">
-                                                        <rect key="frame" x="171" y="0.0" width="101" height="31"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Driver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znz-Xy-LAj">
+                                                        <rect key="frame" x="136.5" y="-323" width="0.0" height="31"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -88,10 +88,10 @@
                                                     <constraint firstItem="PRZ-sq-1o3" firstAttribute="centerX" secondItem="PdC-9x-654" secondAttribute="centerX" id="QdL-nv-kXo"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B4p-Eg-9sY">
-                                                <rect key="frame" x="0.0" y="216" width="272" height="100"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B4p-Eg-9sY">
+                                                <rect key="frame" x="0.0" y="185" width="272" height="100"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-j3-h2l" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-j3-h2l" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
                                                         <rect key="frame" x="48.5" y="0.0" width="175" height="30"/>
                                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Log In">
@@ -101,13 +101,13 @@
                                                             <action selector="loginSignupTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xb-5d-KS6"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-73-4Bb">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-73-4Bb">
                                                         <rect key="frame" x="126.5" y="40" width="19" height="20"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-Fl-uJB" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-Fl-uJB" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
                                                         <rect key="frame" x="48.5" y="70" width="175" height="30"/>
                                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -176,7 +176,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jNS-l3-Pnk" id="dSf-O5-dMg">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -309,11 +309,8 @@
                                 <rect key="frame" x="16" y="92" width="288" height="456"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRq-aq-vZE" customClass="MaterialButton" customModule="Uber_Clone" customModuleProvider="target">
-                                        <rect key="frame" x="84.5" y="386" width="120" height="32"/>
+                                        <rect key="frame" x="16" y="364" width="256" height="32"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="qdb-ya-eM0"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Call An Uber">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,14 +322,25 @@
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-2Z-SFX">
                                         <rect key="frame" x="16" y="8" width="256" height="328"/>
                                     </mapView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-uF-kHo">
+                                        <rect key="frame" x="16" y="356" width="256" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="tlJ-uF-kHo" firstAttribute="leading" secondItem="IXU-2Z-SFX" secondAttribute="leading" id="2EG-Eq-PKZ"/>
                                     <constraint firstItem="IXU-2Z-SFX" firstAttribute="bottom" secondItem="mft-Qr-shc" secondAttribute="bottomMargin" multiplier="0.75" id="AIt-wM-MFJ"/>
                                     <constraint firstItem="DRq-aq-vZE" firstAttribute="centerX" secondItem="IXU-2Z-SFX" secondAttribute="centerX" id="JNf-PA-gbR"/>
-                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="top" secondItem="IXU-2Z-SFX" secondAttribute="bottom" constant="50" id="QZa-QM-Yjq"/>
+                                    <constraint firstItem="tlJ-uF-kHo" firstAttribute="trailing" secondItem="IXU-2Z-SFX" secondAttribute="trailing" id="Jhe-ki-IHd"/>
                                     <constraint firstItem="IXU-2Z-SFX" firstAttribute="leading" secondItem="mft-Qr-shc" secondAttribute="leadingMargin" constant="8" id="aQ0-ft-li7"/>
+                                    <constraint firstItem="tlJ-uF-kHo" firstAttribute="top" secondItem="IXU-2Z-SFX" secondAttribute="bottom" constant="20" id="dqk-MD-ARL"/>
+                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="leading" secondItem="IXU-2Z-SFX" secondAttribute="leading" id="l9E-uX-Obm"/>
+                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="trailing" secondItem="IXU-2Z-SFX" secondAttribute="trailing" id="lUJ-2d-2y0"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="IXU-2Z-SFX" secondAttribute="trailing" constant="8" id="mLb-gw-tea"/>
+                                    <constraint firstItem="DRq-aq-vZE" firstAttribute="top" secondItem="tlJ-uF-kHo" secondAttribute="bottom" constant="8" id="pX5-ge-4BI"/>
                                     <constraint firstItem="IXU-2Z-SFX" firstAttribute="top" secondItem="mft-Qr-shc" secondAttribute="topMargin" id="vS0-qp-f1V"/>
                                 </constraints>
                             </view>
@@ -350,16 +358,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="distanceLabel" destination="tlJ-uF-kHo" id="tS8-IC-27T"/>
                         <outlet property="map" destination="IXU-2Z-SFX" id="Scy-0x-zOA"/>
                         <outlet property="uberButton" destination="DRq-aq-vZE" id="3U7-ut-kjv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjp-fW-xza" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="-390"/>
+            <point key="canvasLocation" x="961.875" y="-390.84507042253523"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lB6-R4-O2x"/>
+        <segue reference="sod-0d-Yej"/>
     </inferredMetricsTieBreakers>
 </document>
